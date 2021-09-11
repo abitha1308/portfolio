@@ -1,0 +1,230 @@
+
+
+/*   -----GLOBAL STYLES-----  */
+
+html {
+  box-sizing: border-box;
+}
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+body {
+margin:0 ;
+padding:0;
+}
+ 
+
+h2{
+padding-bottom: 15px;
+font-family: Arial, Helvetica, sans-serif;
+font-weight:bolder;
+}
+
+img{
+height: 220px;
+width: 300px;
+}
+
+h4{
+margin-bottom:0;
+font-family: 'Bree Serif', serif;
+font-weight: bold;
+}
+
+
+.cont-wrap {
+width:85%;
+max-width:800px;
+padding:60px 0;
+margin: 0 auto;
+}
+
+.train-details  h4 + p {
+  font-style:italic;
+}
+
+.train-details h4 ~ p {
+margin: 0;
+}
+
+.divider > section{
+border-bottom: 1px dashed black;
+padding:25px 0;
+}
+
+.divider > section:last-of-type{
+border-bottom: none;
+}
+
+h1{
+font-family: 'Bree Serif', serif; 
+padding-bottom:10px;
+}
+
+/*   -----HEADER STYLES-----  */
+
+header{
+background: #2F3061;
+color: white;
+
+}
+
+header p{
+padding-top: 10px;
+}
+
+
+/*   -----EDUCATION STYLES-----  */
+
+.education{
+background-image: url(https://abitha001.w3spaces.com/bg.jpg?bypass-cache=1625461805);
+background-position: top right;
+background-size: cover;
+}
+
+
+.trans-box {
+background-color: rgba(255,255,255,0.6);
+padding:10px;
+
+}
+
+.trans-box:hover{
+  transform: scale(1.1);
+}
+
+
+/*   -----TECHNICAL STYLES-----  */
+
+.tech{
+background:#343434;
+color:white;
+}
+
+.tech h4{
+margin-bottom:5px;}
+
+/*   -----TRAINING STYLES-----  */
+
+.train{
+background: #09A7A1;
+color: white;
+
+}
+.train a{
+background-color: #842DCE;
+color:white;
+}
+
+.train a:hover{
+
+animation-name: bg-color;
+animation-duration: 1s;
+animation-fill-mode: forwards;
+color:white;
+}
+@keyframes bg-color{
+  100%{
+    background-color: #C12869;
+    opacity: 0.8;
+  }
+}
+
+/*  #8B008B -----PROJECT STYLES-----  */
+
+.project{
+background:	#FFBF00;
+}
+.project a:hover{
+animation-name: bg2;
+animation-duration: 1s;
+animation-fill-mode: forwards;
+}
+
+@keyframes bg2{
+  100%{
+    background-color: #4791d0;
+  }
+}
+
+.proj-item{
+overflow: hidden;
+} 
+.proj-item h4{
+margin-top:0;
+}
+
+
+/*   -----FOOTER STYLES-----  */
+
+footer{
+background: black;
+color: white;
+text-align:center;
+}
+
+.ul-list{
+list-style-type: none;
+padding: 0;
+
+}
+
+.ul-list a{
+display: inline-block;
+margin: 100px;
+}
+
+footer li:hover{
+  transform: scale(1.5);
+}
+
+
+/*     ------------------ media queries ---------------------- */
+
+@media screen and (max-width:739px){
+
+
+
+h2{
+font-size: 30px;
+font-weight: bolder;
+}
+
+
+
+.item-title {
+padding-bottom:20px;
+}
+
+.proj-item h4{
+margin-top:20px;
+}
+}
+
+
+@media screen and (min-width:740px){
+
+
+
+header{
+text-align:center;
+}
+
+.item-details {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    column-gap: 15px;
+  }
+
+.proj-item img{
+float:left;
+margin-right:20px;
+}
+
+.ul-list{
+display:flex;
+justify-content: center;
+}
+
+}
